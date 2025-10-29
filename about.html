@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>About MCWC | Nationwide Business Consulting</title>
+<meta name="description" content="About MCWC Business Consulting — based in Tennessee, proudly serving clients nationwide with over 30 years of experience in strategy, operations, and growth.">
+<link rel="icon" type="image/png" href="favicon.png">
+<style>
+:root{
+  --bg:#ffffff;
+  --ink:#000000;
+  --muted:#4f4f4f;
+  --brand:#ff7f00; /* Tennessee orange */
+  --gray:#d9d9d9;
+  --light-gray:#f4f4f4;
+  --radius:14px;
+  --shadow:0 6px 18px rgba(0,0,0,.06);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font:16px/1.55 system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial;background:var(--bg);color:var(--ink)}
+a{color:var(--ink);text-decoration:none}
+a:hover{text-decoration:underline}
+.container{max-width:1100px;margin:auto;padding:0 20px}
+
+/* Header with text-only brand */
+header{position:sticky;top:0;background:#fff;border-bottom:2px solid var(--gray);z-index:5}
+header .container{display:flex;justify-content:space-between;align-items:center;min-height:64px}
+.brand{font-weight:800;letter-spacing:.4px}
+.nav{display:flex;gap:18px;align-items:center}
+.nav .cta{background:var(--brand);padding:8px 14px;border-radius:10px;color:#fff}
+
+/* Hero */
+.hero{
+  display:grid;place-items:center;min-height:46vh;
+  background:
+    linear-gradient(135deg, rgba(255,127,0,0.85), rgba(255,255,255,0.95)),
+    url('hero.jpg') center/cover no-repeat;
+  text-align:center;color:#000;
+}
+.hero-inner{padding:60px 20px}
+.hero h1{font-size:clamp(28px,3.5vw,42px);margin-bottom:10px}
+.hero p{max-width:800px;margin:0 auto;color:#1a1a1a}
+
+/* Sections */
+.section{padding:54px 0}
+.alt{background:var(--light-gray)}
+.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+@media(max-width:900px){.grid-3{grid-template-columns:1fr}}
+.card{background:#fff;border:1px solid var(--gray);border-radius:var(--radius);padding:22px;box-shadow:var(--shadow)}
+h2.section-title{color:var(--brand);margin-bottom:10px}
+.lead{font-size:18px;color:#1a1a1a}
+ul{padding-left:18px}
+.kpis{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:16px}
+.kpi{background:#fff;border:1px solid var(--gray);border-radius:12px;padding:16px;text-align:center}
+.kpi b{display:block;font-size:22px}
+blockquote{border-left:4px solid var(--brand);padding:10px 14px;background:#fff;margin:12px 0;border-radius:8px}
+footer{border-top:2px solid var(--gray);padding:24px 0;text-align:center;font-size:15px;color:var(--muted)}
+.btn{display:inline-block;background:var(--brand);color:#fff;padding:12px 18px;border-radius:12px;box-shadow:var(--shadow);margin:5px}
+.center{text-align:center}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="container">
+    <!-- Text-only brand (no logo image) -->
+    <a class="brand" href="index.html">MCWC</a>
+    <nav class="nav">
+      <a href="index.html#services">Services</a>
+      <a href="about.html" aria-current="page">About</a>
+      <a href="index.html#contact" class="cta">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="hero-inner">
+    <h1>About MCWC</h1>
+    <p>Based in Tennessee, serving clients nationwide. For over 30 years, we’ve helped leaders clarify strategy, strengthen operations, and build durable, profitable growth.</p>
+  </div>
+</section>
+
+<!-- Who we are -->
+<section class="section">
+  <div class="container">
+    <h2 class="section-title">Who We Are</h2>
+    <p class="lead">MCWC Business Consulting partners with founders and leadership teams across the United States. We bring big-firm discipline with a hands-on, practical approach—so plans turn into results.</p>
+    <div class="kpis">
+      <div class="kpi"><b>30+ yrs</b><span>Advising leaders</span></div>
+      <div class="kpi"><b>US-wide</b><span>Clients served</span></div>
+      <div class="kpi"><b>Fixed-fee</b><span>Clear deliverables</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- What we do -->
+<section class="section alt">
+  <div class="container grid-3">
+    <div class="card">
+      <h3>Strategy & Planning</h3>
+      <ul>
+        <li>Market & competitive insight</li>
+        <li>90‑day execution roadmaps</li>
+        <li>KPIs, dashboards, governance</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>Operations & Process</h3>
+      <ul>
+        <li>Process mapping & SOPs</li>
+        <li>Org design & enablement</li>
+        <li>Vendor & cost optimization</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>Revenue Growth</h3>
+      <ul>
+        <li>Positioning & offers</li>
+        <li>Sales pipeline design</li>
+        <li>Pricing & margin strategy</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- How we work -->
+<section class="section">
+  <div class="container">
+    <h2 class="section-title">How We Work</h2>
+    <ol>
+      <li><strong>Discovery:</strong> We listen, review numbers, and align on goals.</li>
+      <li><strong>Plan:</strong> A practical 90‑day plan with owners, milestones, and KPIs.</li>
+      <li><strong>Execute:</strong> Weekly cadence to implement, measure, and adapt.</li>
+    </ol>
+    <blockquote>“MCWC gave us focus and momentum. In 90 days we had better visibility, tighter processes, and a sales pipeline that actually moved.”</blockquote>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="section alt center">
+  <div class="container">
+    <h2 class="section-title">Let’s Talk</h2>
+    <p class="lead">Ready to move your business forward? We’ll respond within one business day.</p>
+    <a class="btn" href="index.html#contact">Contact Us</a>
+  </div>
+</section>
+
+<footer>
+  © <span id="year"></span> MCWC Business Consulting — Based in Tennessee, Serving the USA
+</footer>
+
+<script>
+document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>

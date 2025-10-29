@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MCWC Business Consulting | Nationwide Business Consulting</title>
+<meta name="description" content="MCWC Business Consulting — located in Tennessee, proudly serving businesses nationwide with over 30 years of strategic consulting experience.">
+
+<!-- ✅ Favicon -->
+<link rel="icon" type="image/png" href="favicon.png">
+
+<style>
+:root{
+  --bg:#ffffff;
+  --ink:#000000;
+  --muted:#4f4f4f;
+  --brand:#ff7f00; /* Tennessee orange */
+  --gray:#d9d9d9;
+  --light-gray:#f4f4f4;
+  --radius:14px;
+  --shadow:0 6px 18px rgba(0,0,0,.06);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font:16px/1.55 system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial;background:var(--bg);color:var(--ink)}
+a{color:var(--ink);text-decoration:none}
+a:hover{text-decoration:underline}
+.container{max-width:1100px;margin:auto;padding:0 20px}
+
+/* --- Header --- */
+header{
+  position:sticky;top:0;background:#fff;
+  border-bottom:2px solid var(--gray);z-index:5;
+}
+header .container{
+  display:flex;justify-content:space-between;
+  align-items:center;min-height:64px;
+}
+.brand{
+  font-weight:800;letter-spacing:.4px;font-size:22px;color:var(--brand);
+}
+.nav{display:flex;gap:18px;align-items:center}
+.nav a{font-weight:500}
+.nav .cta{
+  background:var(--brand);padding:8px 14px;border-radius:10px;color:#fff;
+}
+
+/* --- Hero Section --- */
+.hero{
+  display:grid;place-items:center;min-height:70vh;
+  background:
+    linear-gradient(135deg, rgba(255,127,0,0.85), rgba(255,255,255,0.95)),
+    url('hero.jpg') center/cover no-repeat;
+  text-align:center;color:#000;
+}
+.hero-inner{padding:70px 20px}
+.hero h1{font-size:clamp(28px,3.5vw,44px);margin-bottom:12px}
+.hero span{color:#000;font-weight:400}
+.hero p{margin-bottom:22px;font-size:18px;color:#1a1a1a}
+.btn{
+  display:inline-block;background:var(--brand);color:#fff;padding:12px 18px;
+  border-radius:12px;box-shadow:var(--shadow);margin:5px;transition:.2s;
+}
+.btn:hover{opacity:.9;transform:scale(1.02)}
+
+/* --- Sections --- */
+.section{padding:60px 0}
+.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+@media(max-width:900px){.grid-3{grid-template-columns:1fr}}
+
+.card{
+  background:#fff;border:1px solid var(--gray);border-radius:var(--radius);
+  padding:22px;box-shadow:var(--shadow);
+}
+.card h2{margin-bottom:8px;color:var(--brand)}
+.alt{background:var(--light-gray)}
+
+.step{
+  background:#fff;border:1px solid var(--gray);border-radius:var(--radius);
+  padding:22px;text-align:center;box-shadow:var(--shadow);
+}
+.step-num{
+  display:inline-grid;place-items:center;width:42px;height:42px;
+  border-radius:50%;background:var(--brand);color:#fff;margin-bottom:10px;font-weight:bold;
+}
+
+/* --- Contact & Footer --- */
+form{display:grid;gap:14px;max-width:600px;margin:30px auto}
+input,textarea{
+  width:100%;padding:12px 14px;border:1px solid var(--gray);
+  border-radius:12px;font:inherit;
+}
+input:focus,textarea:focus{outline:2px solid var(--brand);border-color:var(--brand)}
+address{text-align:center;margin-top:20px;font-style:normal;color:var(--muted)}
+footer{
+  border-top:2px solid var(--gray);padding:24px 0;
+  text-align:center;font-size:15px;color:var(--muted);
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="container">
+    <!-- ✅ Text-only brand -->
+    <a class="brand" href="#">MCWC</a>
+    <nav class="nav">
+      <a href="#services">Services</a>
+      <a href="about.html">About</a>
+      <a href="#contact" class="cta">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="hero-inner">
+    <h1>Nationwide Business Consulting<br><span>30+ Years of Experience</span></h1>
+    <p>Helping businesses across the United States grow through strategy, operations, and leadership excellence.</p>
+    <a href="#contact" class="btn">Get in Touch</a>
+  </div>
+</section>
+
+<section id="services" class="section">
+  <div class="container grid-3">
+    <div class="card">
+      <h2>Strategy & Planning</h2>
+      <p>Clear, measurable plans built around your market and financial goals.</p>
+    </div>
+    <div class="card">
+      <h2>Operations & Process</h2>
+      <p>Streamlined systems that improve reliability and reduce costs.</p>
+    </div>
+    <div class="card">
+      <h2>Revenue Growth</h2>
+      <p>Sales and marketing strategies that deliver consistent results.</p>
+    </div>
+  </div>
+</section>
+
+<section id="about" class="section alt">
+  <div class="container">
+    <h2 style="color:var(--brand);margin-bottom:10px;">About MCWC</h2>
+    <p>For over three decades, MCWC Business Consulting has worked with organizations across the United States to clarify strategy, improve performance, and scale growth. Based in Tennessee, we proudly serve clients nationwide—combining big-firm insight with hands-on collaboration and clear deliverables.</p>
+  </div>
+</section>
+
+<section id="approach" class="section">
+  <div class="container grid-3">
+    <div class="step"><span class="step-num">1</span><h3>Discover</h3><p>We listen to your challenges and assess opportunities.</p></div>
+    <div class="step"><span class="step-num">2</span><h3>Plan</h3><p>We build a roadmap with achievable milestones.</p></div>
+    <div class="step"><span class="step-num">3</span><h3>Execute</h3><p>We partner with you to implement, measure, and adapt.</p></div>
+  </div>
+</section>
+
+<section id="contact" class="section alt">
+  <div class="container">
+    <h2 style="color:var(--brand);">Contact Us</h2>
+    <p>We’d love to learn about your goals. Reach out for a free consultation.</p>
+    <form action="mailto:info@mcwcconsulting.com" method="post" enctype="text/plain">
+      <input type="text" name="name" placeholder="Full Name" required>
+      <input type="email" name="email" placeholder="Email" required>
+      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+      <button class="btn" type="submit">Send Message</button>
+    </form>
+    <address>
+      MCWC Business Consulting<br>
+      Based in Tennessee — Serving Clients Nationwide<br>
+      <a href="mailto:info@mcwcconsulting.com">info@mcwcconsulting.com</a>
+    </address>
+  </div>
+</section>
+
+<footer>
+  © <span id="year"></span> MCWC Business Consulting — Based in Tennessee, Serving the USA
+</footer>
+
+<script>
+document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
